@@ -1,6 +1,6 @@
 import React, { PureComponent, createRef } from "react";
-import { WebView as RNWebView, StyleSheet, Platform } from "react-native";
-
+import { StyleSheet, Platform } from "react-native";
+import RNWebView from "react-native-webview";
 const changeData = data => `chart.changeData(${JSON.stringify(data)});`;
 
 const source = Platform.select({
